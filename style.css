@@ -5,6 +5,216 @@
   font-family: "Abril Fatface", cursive;
 }
 
-h1 {
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f1ee;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  padding: 1rem 10vw;
+  gap: 10px;
+}
+nav .aBox {
+  width: 40vw;
+  height: 2rem;
+  background-color: #bdcab7;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+nav .aBox a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+nav i {
+  background-color: #bdcab7;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10vw;
+}
+main #s1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+}
+main #s1 h1 {
+  font-size: 24vw;
   font-family: "Lobster", cursive;
+}
+main #s1 #mainImgBox {
+  position: relative;
+  width: 100%;
+}
+main #s1 #mainImgBox #mainBg {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border-radius: 8rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./img/pexels-riccardo-307006.jpg");
+}
+main #s1 #mainImgBox img {
+  width: 26vw;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #s1 #s1Desc {
+  margin-top: 30px;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22vw;
+}
+main #s1 #s1Desc #s1-1 {
+  width: 6rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main #s1 #s1Desc #s1-1 div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main #s1 #s1Desc #s1-1 div:nth-child(1) h2 {
+  font-size: 1rem;
+}
+main #s1 #s1Desc #s1-1 div:nth-child(1) p {
+  border-left: 2px solid black;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+}
+main #s1 #s1Desc #s1-1 div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main #s1 #s1Desc #s1-1 div:nth-child(2) span {
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  background-color: #d49440;
+}
+main #s1 #s1Desc #s1-2 {
+  width: 6rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+main #s1 #s1Desc #s1-2 div {
+  width: 60%;
+  background-color: #bdcab7;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+}
+main #s1 #s1Desc #s1-2 div a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+main #s1 #s1Desc #s1-2 div i {
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 1rem;
+}
+main #s1 #s1Desc #s1-2 i {
+  color: #d49440;
+  width: 100%;
+  text-align: start;
+  font-size: 6rem;
+}
+main #s2 {
+  width: 96%;
+  background-color: green;
+  padding: 4rem 0;
+}
+main #s2 h2 {
+  padding: 4rem 10vw;
+  font-size: 1.6rem;
+  text-align: center;
+}
+main #s2 #s2-imgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+main #s2 #s2-imgbox img {
+  width: 200px;
+  aspect-ratio: 3/4;
+  flex-grow: 1;
+  border-radius: 2vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #s2 #s2-imgbox #boxDesc {
+  width: 200px;
+  aspect-ratio: 3/4;
+  background-color: #f54b3a;
+  flex-grow: 1;
+  border-radius: 50vmin;
+  gap: 20px;
+  padding: 10vmax 5%;
+  display: flex;
+  flex-direction: column;
+}
+main #s2 #s2-imgbox #boxDesc p {
+  flex-grow: 1;
+  font-size: 0.8rem;
+}
+main #s2 #s2-imgbox #boxDesc div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d49440;
+  border-radius: 50vmin;
+}
+main #s2 #s2-imgbox #boxDesc div a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+  flex-grow: 1;
+}
+main #s2 #s2-imgbox #boxDesc div i {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 960px) {
+  nav .aBox {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  main #s1 #mainImgBox img {
+    bottom: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */
