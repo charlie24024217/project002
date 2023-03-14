@@ -150,8 +150,6 @@ main #s1 #s1Desc #s1-2 i {
 }
 main #s2 {
   width: 96%;
-  background-color: green;
-  padding: 4rem 0;
 }
 main #s2 h2 {
   padding: 4rem 10vw;
@@ -206,6 +204,151 @@ main #s2 #s2-imgbox #boxDesc div i {
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
+}
+main #s3 {
+  width: 96%;
+  padding: 4rem 0;
+}
+main #s3 header {
+  padding: 0.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid black;
+}
+main #s3 header .hLeft {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+main #s3 header .hLeft h2 {
+  font-size: 1.6rem;
+}
+main #s3 header .hLeft a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+main #s3 header .hRight {
+  align-self: end;
+  font-size: 1rem;
+}
+main #s3 #s3-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main #s3 #s3-1 .left {
+  padding: 1rem 0;
+  width: 40%;
+  min-height: 260px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main #s3 #s3-1 .left p {
+  font-size: 0.8rem;
+}
+main #s3 #s3-1 .left img {
+  width: 100px;
+  height: 100px;
+  padding-left: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #s3 #s3-1 .right {
+  flex-grow: 1;
+  width: 400px;
+  padding: 1rem 0;
+}
+main #s3 #s3-1 .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main #s3 #s3-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main #s3 #s3-2 #s3-2-1 {
+  width: 400px;
+  height: 200px;
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+}
+main #s3 #s3-2 #s3-2-1 img {
+  flex-shrink: 0;
+  width: 25%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
+}
+main #s3 #s3-2 #s3-2-2 {
+  width: 400px;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #s3 #s3-2 #s3-2-2 img {
+  width: 100px;
+  height: 100px;
+}
+main #s3 #s3-2 #s3-2-3 {
+  width: 400px;
+  flex-grow: 1;
+}
+main #s3 #s3-2 #s3-2-3 h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+main #s3 #s3-2 #s3-2-3 p {
+  font-size: 0.8rem;
+}
+main #s3 #s3-2 #s3-2-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 400px;
+  height: 200px;
+  flex-grow: 1;
+  gap: 10px;
+}
+main #s3 #s3-2 #s3-2-4 a {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 3rem;
+  background-color: #bdcab7;
+  border-radius: 50vmin;
+}
+main #s3 #s3-2 #s3-2-4 div {
+  display: flex;
+  justify-content: end;
+  height: 100px;
+  flex-grow: 1;
+}
+main #s3 #s3-2 #s3-2-4 div img {
+  width: 25%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
 }
 
 @media (max-width: 960px) {
