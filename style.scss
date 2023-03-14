@@ -184,6 +184,7 @@ main {
         p {
           flex-grow: 1;
           font-size: 0.8rem;
+          color: $mainColor;
         }
         div {
           width: 100%;
@@ -384,7 +385,7 @@ main {
   }
   #s5 {
     width: 96%;
-    padding: 10vw 0;
+    padding: 15vw 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -433,7 +434,7 @@ main {
       }
       h2 {
         padding: 0 1rem;
-        margin: 3rem 0;
+        margin: 2.4vmin 0;
         border-left: 2px solid $red;
       }
       #s5-2-2 {
@@ -452,6 +453,7 @@ main {
     #s5-3 {
       width: 270px;
       flex-grow: 1;
+      padding: 0 30px;
       img {
         border: 1px solid black;
         object-fit: cover;
@@ -464,6 +466,43 @@ main {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10vw 12vw;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  gap: 20px;
+  .left {
+    display: flex;
+    gap: 40px;
+    ul {
+      list-style: none;
+      font-size: 1.2rem;
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: end;
+    h3 {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
+    .spanBox {
+      display: flex;
+      gap: 10px;
+      span {
+        padding: 0.4rem 4vw;
+        background-color: $orange;
+        border-radius: 50vmin;
+      }
+    }
+  }
 }
 
 @media (max-width: 960px) {

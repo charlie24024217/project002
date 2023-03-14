@@ -184,6 +184,7 @@ main #s2 #s2-imgbox #boxDesc {
 main #s2 #s2-imgbox #boxDesc p {
   flex-grow: 1;
   font-size: 0.8rem;
+  color: #f5f1ee;
 }
 main #s2 #s2-imgbox #boxDesc div {
   width: 100%;
@@ -386,7 +387,7 @@ main #s4 #s4bg {
 }
 main #s5 {
   width: 96%;
-  padding: 10vw 0;
+  padding: 15vw 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -437,7 +438,7 @@ main #s5 #s5-2 #s5-2-1 img {
 }
 main #s5 #s5-2 h2 {
   padding: 0 1rem;
-  margin: 3rem 0;
+  margin: 2.4vmin 0;
   border-left: 2px solid #f54b3a;
 }
 main #s5 #s5-2 #s5-2-2 {
@@ -455,6 +456,7 @@ main #s5 #s5-2 #s5-2-2 img {
 main #s5 #s5-3 {
   width: 270px;
   flex-grow: 1;
+  padding: 0 30px;
 }
 main #s5 #s5-3 img {
   border: 1px solid black;
@@ -462,6 +464,46 @@ main #s5 #s5-3 img {
      object-fit: cover;
   width: 100%;
   aspect-ratio: 3/4;
+  border-radius: 50vmin;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10vw 12vw;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  gap: 20px;
+}
+footer .left {
+  display: flex;
+  gap: 40px;
+}
+footer .left ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+footer .left ul li {
+  font-size: 0.8rem;
+}
+footer .right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: end;
+}
+footer .right h3 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+footer .right .spanBox {
+  display: flex;
+  gap: 10px;
+}
+footer .right .spanBox span {
+  padding: 0.4rem 4vw;
+  background-color: #d49440;
   border-radius: 50vmin;
 }
 
